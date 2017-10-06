@@ -1,33 +1,26 @@
 # Backend
 
-Welcome to your new Hanami project!
+Reproduce hanami/model#447
 
 ## Setup
 
-How to run tests:
+### Clone and bundle
 
-```
-% bundle exec rake
-```
-
-How to run the development console:
-
-```
-% bundle exec hanami console
+```shell
+git clone https://github.com/jodosha/hanami-model-447.git backend
+cd backend
+bundle
 ```
 
-How to run the development server:
+### Prepare the databases
 
-```
-% bundle exec hanami server
-```
-
-How to prepare (create and migrate) DB for `development` and `test` environments:
-
-```
+```shell
 % bundle exec hanami db prepare
-
 % HANAMI_ENV=test bundle exec hanami db prepare
 ```
 
-Explore Hanami [guides](http://hanamirb.org/guides/), [API docs](http://hanamirb.org/docs/1.0.0/), or jump in [chat](http://chat.hanamirb.org) for help. Enjoy! 🌸
+### Run the tests
+
+```shell
+% bundle exec rake
+```
