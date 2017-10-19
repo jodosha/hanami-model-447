@@ -10,4 +10,8 @@ class EventRepository < Hanami::Repository
   def add_action(event, data)
     assoc(:actions, event).add(data)
   end
+
+  def find_event_value(id)
+    aggregate(:actions).where(id: id).limit(1).map_to(EventValue).one
+  end
 end

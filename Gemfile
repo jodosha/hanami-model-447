@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'hanami',       '1.1.0.beta3'
-gem 'hanami-model', '1.1.0.beta3'
+gem 'hanami',       '1.1.0.rc1'
+gem 'hanami-model', '1.1.0.rc1'
 
 gem 'pg'
 
